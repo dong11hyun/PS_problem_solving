@@ -7,6 +7,7 @@
     #      - 두 번째 기준: 원소의 음수값(-x).
 def solution(numlist, n):
     return sorted(numlist, key=lambda x: (abs(x-n), -x))
+
 #다항식 더하기
 def solution(polynomial):
     x_con = 0
@@ -46,5 +47,23 @@ def solution(array):
     # Case 3: 최빈값이 유일한 경우
     else:
         return most_common_items[0][0] 
+    
+    #OX퀴즈
+    def solution(quiz):
+        answer = []
+        for i in quiz:
+            k = i.split(" ")
+            if k[1] == '+':
+                if int(k[0]) + int(k[2]) == int(k[4]):
+                    answer.append("O")
+                else:
+                    answer.append("X")
+            if k[1] == '-':
+                if int(k[0]) - int(k[2]) == int(k[4]):
+                    answer.append("O") 
+                else:
+                    answer.append("X")
+        
+        return answer
 
 
