@@ -4,10 +4,8 @@
 ## 함수 
 ---
 #### enumerate()
-- compress = {}  # 빈 딕셔너리 생성
 - 리스트를 순회하면서 (인덱스, 값) 쌍을 동시에 반환
 - 반복문 실행 과정
-
 ```python
 for idx, value in enumerate(sorted_coords):
     compress[value] = idx
