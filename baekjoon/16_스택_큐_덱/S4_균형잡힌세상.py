@@ -21,7 +21,7 @@ def solve():
                 stack.pop()
         
         if is_valid == True and not stack:
-            print("YES")
+            print("yes")
         else:
-            print("NO")
+            print("no")
 solve()
