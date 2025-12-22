@@ -23,5 +23,5 @@ def solve():
         if is_valid == True and not stack:
             print("yes")
         else:
-            print("no")
+            print("NO")
 solve()
